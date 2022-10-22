@@ -134,6 +134,7 @@ ul {
 
 .sidebar.sidebar-close {
   width: 60px;
+
 }
 
 .sidebar .logo-details{
@@ -149,8 +150,11 @@ ul {
  
 }
 
-.sidebar.sidebar-close .logo-details .logo {
-  border-radius: 3px;
+.sidebar.sidebar-close .logo-details img {
+  width: 50px;
+  height: 40px;
+
+  background-color: green;
 }
 
 .sidebar .nav-links {
