@@ -4,13 +4,8 @@
     
     </div>
     <ul class="nav-links" id="nav-links" >
-      <li *ngFor="let item of menuSidebar" #itemEl routerLinkActive="active">
-        <div *ngIf="item.sub_menu.length == 0" class="dropdown-title">
-          <a [routerLink]="[item.link]">
-            <i [class]="item.icon"></i>
-            <span class="link_name">{{item.link_name}}</span>
-          </a>
-        </div>
+      <li *ngFor="let item of menuSidebar" #itemEl >
+
         <div *ngIf="item.sub_menu.length > 0" class="dropdown-title" (click)="showSubmenu(itemEl)">
           <a>
             <i [class]="item.icon"></i>
