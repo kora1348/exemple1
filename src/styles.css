@@ -78,8 +78,7 @@ ul {
 /* Home Section */
 .home-section {
   position: relative;
-  background: grey;
-  /* background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%, #25f9f5 0%, #0846da 90%); */
+  background: #F3F6F2;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -92,18 +91,24 @@ ul {
   height: 120px;
   display: flex;
   align-items: center;
-  background-color: red;
+  background-color: #BBE7AA;
 }
 
 
 .home-section .home-header .title {
   color: white;
-  font-size: 35px;
+  font-size: 22px;
+  font-weight: 600;
+  padding-right: 15px;
 }
 
-.home-section .home-header .title {
-  font-size: 26px;
-  font-weight: 600;
+.home-section .home-header #header-banner {
+  margin: 0 auto;
+  display:block;
+}
+
+.home-section .home-header #header-banner img {
+  width: 95%;
 }
 
 /* .home-section .home-view {
