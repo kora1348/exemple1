@@ -13,20 +13,31 @@ export class DashboardComponent implements OnInit {
 
     menuSidebar: MenuSidebar[] = [
        {
-        link_name: "Category",
+        link_name: 'Category',
         link: null,
-        icon: "bx bx-collection",
+        icon: 'bx bx-collection',
         sub_menu: [
           {
-            link_name: "Portfolio",
-            link: "/category/portfolio",
+            link_name: 'Portfolio',
+            link: '/category/portfolio',
           }, 
           {
-            link_name: "Contact",
-            link: "/category/contact",
+            link_name: 'Contact',
+            link: '/category/contact',
           }, 
         ]
-      }
+      },
+      {
+        link_name: 'Markets',
+        link: null,
+        icon: 'bx bx-collection',
+        sub_menu: [
+          {
+            link_name: 'Indice',
+            link: '/markets/indice',
+          }, 
+        ]
+      },
     ]
   
     constructor() { }
@@ -36,7 +47,7 @@ export class DashboardComponent implements OnInit {
     }
   
     showSubmenu(itemEl: HTMLElement) {
-      itemEl.classList.toggle("showMenu");
+      itemEl.classList.toggle('showMenu');
     }
   }
   
