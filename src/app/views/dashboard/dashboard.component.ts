@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
         sub_menu: [
           {
             link_name: "Portfolio",
-            link: "/category/views/portfolio",
+            link: "/category/portfolio",
           }, 
         ]
       }
