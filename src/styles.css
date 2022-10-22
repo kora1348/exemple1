@@ -89,10 +89,12 @@ ul {
 }
 
 .home-section .home-header {
-  height: 80px;
+  height: 120px;
   display: flex;
   align-items: center;
+  background-color: red;
 }
+
 
 .home-section .home-header .title {
   color: white;
@@ -104,15 +106,14 @@ ul {
   font-weight: 600;
 }
 
-.home-section .home-view {
-  /* height: 100%; */
+/* .home-section .home-view {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
-}
+} */
 
 /* Sidebar */
 .sidebar {
