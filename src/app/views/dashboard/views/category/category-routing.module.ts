@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from '../../dashboard.component';
+import { ContactComponent } from './views/contact/contact.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
 
 
@@ -19,6 +20,10 @@ export const CATEGORY_ROUTES: Routes = [
     component: PortfolioComponent,
   },
 
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
  
 
 ];

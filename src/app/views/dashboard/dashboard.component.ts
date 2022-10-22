@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuSidebar } from './types/menuSidebar';
 
 
 @Component({
@@ -10,7 +11,7 @@ export class DashboardComponent implements OnInit {
 
     openSidebar: boolean = true;
 
-    menuSidebar = [
+    menuSidebar: MenuSidebar[] = [
        {
         link_name: "Category",
         link: null,
@@ -19,6 +20,10 @@ export class DashboardComponent implements OnInit {
           {
             link_name: "Portfolio",
             link: "/category/portfolio",
+          }, 
+          {
+            link_name: "Contact",
+            link: "/category/contact",
           }, 
         ]
       }
