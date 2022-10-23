@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
         link_name: 'Category',
         link: null,
         icon: 'bx bx-collection',
+        active: false,
         sub_menu: [
           {
             link_name: 'Portfolio',
@@ -31,6 +32,7 @@ export class DashboardComponent implements OnInit {
         link_name: 'Markets',
         link: null,
         icon: 'bx bx-collection',
+        active: false,
         sub_menu: [
           {
             link_name: 'Indice',
@@ -49,5 +51,17 @@ export class DashboardComponent implements OnInit {
     showSubmenu(itemEl: HTMLElement) {
       itemEl.classList.toggle('showMenu');
     }
+
+    selectMenu(parentMenu: { link_name: string }) : void {
+
+      this.menuSidebar.forEach(menu => {
+      if (menu.link_name !== parentMenu.link_name) {
+      menu.active = false;
+      } else {
+      menu.active = !menu.active;
+      }
+      })
+      
+      }
   }
   
