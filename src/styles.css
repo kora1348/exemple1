@@ -245,7 +245,7 @@ ul {
 /* Sub Menu */
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 50px;
-  background: #fff;
+  background: #239CD3;
   display: none;
   transition: all 0.4s ease;
 }
